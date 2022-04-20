@@ -3,12 +3,12 @@ import sqlite3
 
 
 def random_weight(weight_data):
-    '''
+    """
     实现加权随机抽样
     weight_data 为一个字典
     key = 样本
     value = 权重
-    '''
+    """
     total = sum(weight_data.values())  # 权重求和
     ra = random.uniform(0, total)  # 在 0 与权重和之前获取一个随机数 
     curr_sum = 0
